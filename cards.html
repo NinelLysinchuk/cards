@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>cards</title>
+		<link rel='stylesheet' href='cards.css'>
+		<meta charset='utf-8'>
+	</head>
+	<body>
+		<div class='containerMain 1containerMain_userList'>
+			<div class='containerMain__cards'>
+				<div class='cards'>
+					<div class='cards__card tpl'>
+						<article class='card'>
+							<div class='card__images'>
+								<img src='' class='card__hieroglyph'>
+								<img src='' class='card__transcription'>
+							</div>
+							<input type='checkbox' class='card__checkbox' data-id=''/>
+						</article>
+						<article class='card card-visible'>
+							<img src='ku.jpg' class='card__hieroglyph card__hieroglyph-visible'>
+							<img src='ku2.jpg' class='card__transcription card__transcription-visible'>
+						</article>
+					</div>
+				</div>
+			</div>
+			<div class='containerMain__controls'>
+				<input type='button' class='containerMain__create' value='Понеслася'/>
+				<input type='button' class='containerMain__random' value='next'/>
+			</div>
+		
+		</div>
+	</body>
+	<script src='cards.js'></script>
+	<script>
+	let f1 = new FlashCards();
+	</script>
+</html>

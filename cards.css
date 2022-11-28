@@ -1,0 +1,169 @@
+.containerMain__cards{
+    width: 100%;
+    /* display: flex; */
+}
+.cards{
+    display: flex;
+    width: 100%;
+    /* padding: 50px; */
+    flex-wrap: wrap;
+    user-select: none;
+    justify-content: space-evenly;
+}
+
+
+.cards__card{
+    display: flex;
+    width: 22%;
+    flex-wrap: wrap;
+    /* display: none; */
+    opacity: 90%;
+}
+
+.containerMain_userList .cards__card {
+    display: none;
+    width: 18%;
+}
+.card{
+    /* background: gray; */
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 10%; */
+    margin: 10px 5px 50px 5px;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 8px;
+    position: relative;
+    align-items: center;
+    /* height: 260px; */
+    /* height: 100%; */
+    /* position: relative; */
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    /* width: 80%; */
+    /* display: none; */
+}
+.card__hieroglyph{
+    display: flex;
+    width: 100%;
+    /* padding: 5px; */
+    /* border-radius: 8px; */
+    z-index: 2;
+    position: absolute;
+    /* position: absolute; */
+    /* height: 72%; */
+    /* width: 100%; */
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+}
+.card__transcription{}
+
+.containerMain {
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+body {
+    background: url(background.jpg) no-repeat;
+    background-attachment: fixed;
+}
+
+.card__transcription {
+    /* height: 65%; */
+    /* outline: 4px solid red; */
+    z-index: 1;
+    /* background: blue; */
+    transform: rotateY( 180deg );
+    position: relative;
+    width: 100%;
+}
+
+.cardPlaceholder {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    /* width: 200px; */
+    height: 260px;
+    perspective: 600px;
+}
+
+.card-is-flipped .card__hieroglyph {transform: rotateY(180deg);}
+
+.card__transcription {}
+
+.card-is-flipped-back {
+}
+
+.card__transcription.card-is-flipped {
+    transform: rotate(360deg);
+}
+
+.card__hieroglyph.card-is-flipped {
+    transform: rotate(180deg);
+}
+
+/* .card__transcription.reverse {
+    transform: rotateY(360deg);
+}
+
+.card__hieroglyph.reverse {
+    transform: rotateY(180deg);
+} */
+
+.reverse .card__hieroglyph {
+    transform: rotateY(180deg);
+}
+
+.reverse .card__transcription {
+    transform: rotateY(360deg);
+}
+
+.tpl {display: none;}
+
+.card__checkbox {
+    display: flex;
+    /* outline: 1px solid red; */
+    margin-top: 6px;
+}
+
+.containerMain_userList .card__checkbox {
+    display: none;
+}
+
+.card-visible{display:none;/* display: flex; */}
+
+.card__button-switch {
+}
+
+.button-switch {
+    background: #035863;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-color: #035863;
+}
+
+.containerMain__create {
+    text-transform: uppercase;
+    background: linear-gradient(0deg, #bbb, #aaa);
+    border: 1px solid #999;
+    /* font-weight: bold; */
+    font-size: 14pt;
+    padding: 0.5em 0.6em;
+    border-radius: 3px;
+    color: #333;
+    box-shadow: 0 0 3px #0004;
+    /* line-height: 0.8em; */
+    vertical-align: baseline;
+}
+.containerMain__random{display: none;text-transform: uppercase;background: linear-gradient(0deg, #bbb, #aaa);border: 1px solid #999;/* font-weight: bold; */font-size: 16pt;padding: 0.3em 1em;border-radius: 3px;color: #333;box-shadow: 0 0 3px #0004;/* line-height: 0.8em; */vertical-align: baseline;}
+.containerMain_userList .containerMain__create {display: none;}
+.containerMain_userList .containerMain__random {display: inline-block;}
+
+
+.containerMain__controls {
+    text-align: center;
+}
+.containerMain_userList .cards__card_shown{display: inline-block;display: flex;}
